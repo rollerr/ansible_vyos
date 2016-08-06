@@ -1,11 +1,11 @@
 ---
-- hosts: vyos
+- hosts: dc2
   gather_facts: no
   remote_user: vyos
 
   vars:
     name_server: 4.2.2.3
-    hostname: 192.168.2.241
+    hostname: dc2-edg-r1
 
   tasks:
     - name: Generate config locally

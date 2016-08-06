@@ -1,286 +1,56 @@
-2016-08-04 00:03:11,931:CONFIG:vyos-r1:connecting to vyos-r1
-2016-08-04 00:03:19,954:CONFIG:vyos-r1:Exception: Connection to device timed-out: cisco_ios vyos-r1:22
-2016-08-04 00:04:08,960:CONFIG:vyos-r1:connecting to vyos-r1
-2016-08-04 00:04:08,960:CONFIG:vyos-r1:Exception: vyos
-2016-08-04 00:04:55,238:CONFIG:vyos-r1:connecting to vyos-r1
-2016-08-04 00:04:55,239:CONFIG:vyos-r1:Exception: vyos
-2016-08-04 00:05:13,347:CONFIG:vyos-r1:connecting to vyos-r1
-2016-08-04 00:05:13,347:CONFIG:vyos-r1:Exception: vyos
-2016-08-04 00:33:51,536:CONFIG:vyos-r1:connecting to vyos-r1
-2016-08-04 00:33:59,564:CONFIG:vyos-r1:Exception: Connection to device timed-out: vyos vyos-r1:22
-2016-08-04 00:34:51,841:CONFIG:vyos-r1:connecting to vyos-r1
-2016-08-04 00:34:59,871:CONFIG:vyos-r1:Exception: Connection to device timed-out: vyos vyos-r1:22
-2016-08-04 00:39:10,583:CONFIG:vyos-r1:connecting to vyos-r1
-2016-08-04 00:39:10,585:CONFIG:vyos-r1:Exception: 
-2016-08-04 00:39:34,715:CONFIG:vyos-r1:connecting to vyos-r1
-2016-08-04 00:39:34,757:CONFIG:vyos-r1:Exception: Connection to device timed-out: vyos vyos-r1:22
-2016-08-04 00:40:22,441:CONFIG:vyos-r1:connecting to vyos-r1
-2016-08-04 00:40:22,446:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-04 00:40:22,496:paramiko.transport:Unknown exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:40:22,501:paramiko.transport:Traceback (most recent call last):
-2016-08-04 00:40:22,501:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1774, in run
-2016-08-04 00:40:22,501:paramiko.transport:    self.kex_engine.parse_next(ptype, m)
-2016-08-04 00:40:22,501:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 75, in parse_next
-2016-08-04 00:40:22,501:paramiko.transport:    return self._parse_kexdh_reply(m)
-2016-08-04 00:40:22,501:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 111, in _parse_kexdh_reply
-2016-08-04 00:40:22,501:paramiko.transport:    self.transport._verify_key(host_key, sig)
-2016-08-04 00:40:22,501:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1619, in _verify_key
-2016-08-04 00:40:22,501:paramiko.transport:    key = self._key_info[self.host_key_type](Message(host_key))
-2016-08-04 00:40:22,501:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/rsakey.py", line 58, in __init__
-2016-08-04 00:40:22,501:paramiko.transport:    ).public_key(default_backend())
-2016-08-04 00:40:22,501:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
-2016-08-04 00:40:22,501:paramiko.transport:    _default_backend = MultiBackend(_available_backends())
-2016-08-04 00:40:22,501:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
-2016-08-04 00:40:22,502:paramiko.transport:    "cryptography.backends"
-2016-08-04 00:40:22,502:paramiko.transport:AttributeError: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:40:22,502:paramiko.transport:
-2016-08-04 00:40:22,514:CONFIG:vyos-r1:Exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:43:01,479:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:43:01,486:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-04 00:43:01,548:paramiko.transport:Unknown exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:43:01,548:paramiko.transport:Traceback (most recent call last):
-2016-08-04 00:43:01,550:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1774, in run
-2016-08-04 00:43:01,550:paramiko.transport:    self.kex_engine.parse_next(ptype, m)
-2016-08-04 00:43:01,550:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 75, in parse_next
-2016-08-04 00:43:01,550:paramiko.transport:    return self._parse_kexdh_reply(m)
-2016-08-04 00:43:01,550:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 111, in _parse_kexdh_reply
-2016-08-04 00:43:01,550:paramiko.transport:    self.transport._verify_key(host_key, sig)
-2016-08-04 00:43:01,550:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1619, in _verify_key
-2016-08-04 00:43:01,550:paramiko.transport:    key = self._key_info[self.host_key_type](Message(host_key))
-2016-08-04 00:43:01,550:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/rsakey.py", line 58, in __init__
-2016-08-04 00:43:01,550:paramiko.transport:    ).public_key(default_backend())
-2016-08-04 00:43:01,550:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
-2016-08-04 00:43:01,550:paramiko.transport:    _default_backend = MultiBackend(_available_backends())
-2016-08-04 00:43:01,551:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
-2016-08-04 00:43:01,551:paramiko.transport:    "cryptography.backends"
-2016-08-04 00:43:01,551:paramiko.transport:AttributeError: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:43:01,551:paramiko.transport:
-2016-08-04 00:43:01,554:CONFIG:192.168.2.241:Exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:43:55,543:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:43:55,549:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-04 00:43:55,598:paramiko.transport:Unknown exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:43:55,598:paramiko.transport:Traceback (most recent call last):
-2016-08-04 00:43:55,598:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1774, in run
-2016-08-04 00:43:55,598:paramiko.transport:    self.kex_engine.parse_next(ptype, m)
-2016-08-04 00:43:55,598:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 75, in parse_next
-2016-08-04 00:43:55,599:paramiko.transport:    return self._parse_kexdh_reply(m)
-2016-08-04 00:43:55,599:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 111, in _parse_kexdh_reply
-2016-08-04 00:43:55,599:paramiko.transport:    self.transport._verify_key(host_key, sig)
-2016-08-04 00:43:55,599:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1619, in _verify_key
-2016-08-04 00:43:55,599:paramiko.transport:    key = self._key_info[self.host_key_type](Message(host_key))
-2016-08-04 00:43:55,599:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/rsakey.py", line 58, in __init__
-2016-08-04 00:43:55,599:paramiko.transport:    ).public_key(default_backend())
-2016-08-04 00:43:55,599:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
-2016-08-04 00:43:55,599:paramiko.transport:    _default_backend = MultiBackend(_available_backends())
-2016-08-04 00:43:55,599:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
-2016-08-04 00:43:55,599:paramiko.transport:    "cryptography.backends"
-2016-08-04 00:43:55,599:paramiko.transport:AttributeError: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:43:55,599:paramiko.transport:
-2016-08-04 00:43:55,621:CONFIG:192.168.2.241:Exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:44:29,428:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:44:29,432:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-04 00:44:29,480:paramiko.transport:Unknown exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:44:29,481:paramiko.transport:Traceback (most recent call last):
-2016-08-04 00:44:29,481:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1774, in run
-2016-08-04 00:44:29,481:paramiko.transport:    self.kex_engine.parse_next(ptype, m)
-2016-08-04 00:44:29,481:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 75, in parse_next
-2016-08-04 00:44:29,481:paramiko.transport:    return self._parse_kexdh_reply(m)
-2016-08-04 00:44:29,481:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 111, in _parse_kexdh_reply
-2016-08-04 00:44:29,481:paramiko.transport:    self.transport._verify_key(host_key, sig)
-2016-08-04 00:44:29,481:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1619, in _verify_key
-2016-08-04 00:44:29,481:paramiko.transport:    key = self._key_info[self.host_key_type](Message(host_key))
-2016-08-04 00:44:29,481:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/rsakey.py", line 58, in __init__
-2016-08-04 00:44:29,481:paramiko.transport:    ).public_key(default_backend())
-2016-08-04 00:44:29,481:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
-2016-08-04 00:44:29,481:paramiko.transport:    _default_backend = MultiBackend(_available_backends())
-2016-08-04 00:44:29,481:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
-2016-08-04 00:44:29,481:paramiko.transport:    "cryptography.backends"
-2016-08-04 00:44:29,481:paramiko.transport:AttributeError: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:44:29,481:paramiko.transport:
-2016-08-04 00:44:29,497:CONFIG:192.168.2.241:Exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:45:19,907:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:45:19,909:CONFIG:192.168.2.241:Exception: 
-2016-08-04 00:46:01,635:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:47:02,386:CONFIG:192.168.2.241:Exception: 
-2016-08-04 00:47:35,566:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:47:35,580:CONFIG:192.168.2.241:Exception: 
-2016-08-04 00:51:34,831:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:51:34,832:CONFIG:192.168.2.241:Exception: 
-2016-08-04 00:51:53,462:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:51:53,463:CONFIG:192.168.2.241:Exception: 
-2016-08-04 00:52:34,334:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:52:34,336:CONFIG:192.168.2.241:Exception: 
-2016-08-04 00:53:33,003:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:53:33,004:CONFIG:192.168.2.241:Exception: 
-2016-08-04 00:54:01,939:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:54:01,940:CONFIG:192.168.2.241:Exception: 
-2016-08-04 00:55:40,330:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:55:40,334:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-04 00:55:40,376:paramiko.transport:Unknown exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:55:40,377:paramiko.transport:Traceback (most recent call last):
-2016-08-04 00:55:40,377:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1774, in run
-2016-08-04 00:55:40,377:paramiko.transport:    self.kex_engine.parse_next(ptype, m)
-2016-08-04 00:55:40,377:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 75, in parse_next
-2016-08-04 00:55:40,377:paramiko.transport:    return self._parse_kexdh_reply(m)
-2016-08-04 00:55:40,377:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 111, in _parse_kexdh_reply
-2016-08-04 00:55:40,377:paramiko.transport:    self.transport._verify_key(host_key, sig)
-2016-08-04 00:55:40,377:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1619, in _verify_key
-2016-08-04 00:55:40,377:paramiko.transport:    key = self._key_info[self.host_key_type](Message(host_key))
-2016-08-04 00:55:40,377:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/rsakey.py", line 58, in __init__
-2016-08-04 00:55:40,377:paramiko.transport:    ).public_key(default_backend())
-2016-08-04 00:55:40,377:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
-2016-08-04 00:55:40,377:paramiko.transport:    _default_backend = MultiBackend(_available_backends())
-2016-08-04 00:55:40,377:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
-2016-08-04 00:55:40,378:paramiko.transport:    "cryptography.backends"
-2016-08-04 00:55:40,378:paramiko.transport:AttributeError: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:55:40,378:paramiko.transport:
-2016-08-04 00:55:40,396:CONFIG:192.168.2.241:Exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:55:48,456:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:55:48,461:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-04 00:55:48,508:paramiko.transport:Unknown exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:55:48,508:paramiko.transport:Traceback (most recent call last):
-2016-08-04 00:55:48,508:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1774, in run
-2016-08-04 00:55:48,509:paramiko.transport:    self.kex_engine.parse_next(ptype, m)
-2016-08-04 00:55:48,509:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 75, in parse_next
-2016-08-04 00:55:48,509:paramiko.transport:    return self._parse_kexdh_reply(m)
-2016-08-04 00:55:48,509:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 111, in _parse_kexdh_reply
-2016-08-04 00:55:48,509:paramiko.transport:    self.transport._verify_key(host_key, sig)
-2016-08-04 00:55:48,509:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1619, in _verify_key
-2016-08-04 00:55:48,509:paramiko.transport:    key = self._key_info[self.host_key_type](Message(host_key))
-2016-08-04 00:55:48,509:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/rsakey.py", line 58, in __init__
-2016-08-04 00:55:48,509:paramiko.transport:    ).public_key(default_backend())
-2016-08-04 00:55:48,509:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
-2016-08-04 00:55:48,509:paramiko.transport:    _default_backend = MultiBackend(_available_backends())
-2016-08-04 00:55:48,509:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
-2016-08-04 00:55:48,509:paramiko.transport:    "cryptography.backends"
-2016-08-04 00:55:48,509:paramiko.transport:AttributeError: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:55:48,509:paramiko.transport:
-2016-08-04 00:55:48,523:CONFIG:192.168.2.241:Exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:56:03,072:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-04 00:56:03,076:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-04 00:56:03,125:paramiko.transport:Unknown exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:56:03,125:paramiko.transport:Traceback (most recent call last):
-2016-08-04 00:56:03,125:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1774, in run
-2016-08-04 00:56:03,126:paramiko.transport:    self.kex_engine.parse_next(ptype, m)
-2016-08-04 00:56:03,126:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 75, in parse_next
-2016-08-04 00:56:03,126:paramiko.transport:    return self._parse_kexdh_reply(m)
-2016-08-04 00:56:03,126:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 111, in _parse_kexdh_reply
-2016-08-04 00:56:03,126:paramiko.transport:    self.transport._verify_key(host_key, sig)
-2016-08-04 00:56:03,126:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1619, in _verify_key
-2016-08-04 00:56:03,126:paramiko.transport:    key = self._key_info[self.host_key_type](Message(host_key))
-2016-08-04 00:56:03,126:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/rsakey.py", line 58, in __init__
-2016-08-04 00:56:03,126:paramiko.transport:    ).public_key(default_backend())
-2016-08-04 00:56:03,126:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
-2016-08-04 00:56:03,126:paramiko.transport:    _default_backend = MultiBackend(_available_backends())
-2016-08-04 00:56:03,126:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
-2016-08-04 00:56:03,126:paramiko.transport:    "cryptography.backends"
-2016-08-04 00:56:03,127:paramiko.transport:AttributeError: 'EntryPoint' object has no attribute 'resolve'
-2016-08-04 00:56:03,127:paramiko.transport:
-2016-08-04 00:56:03,142:CONFIG:192.168.2.241:Exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-06 12:30:31,903:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:30:34,903:CONFIG:192.168.2.241:Exception: Connection to device timed-out: vyos 192.168.2.241:22
-2016-08-06 12:30:59,366:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:30:59,369:CONFIG:192.168.2.241:Exception: Connection to device timed-out: vyos 192.168.2.241:22
-2016-08-06 12:31:07,480:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:31:07,480:CONFIG:192.168.2.241:Exception: Connection to device timed-out: vyos 192.168.2.241:22
-2016-08-06 12:32:21,830:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:32:21,831:CONFIG:192.168.2.241:Exception: Connection to device timed-out: vyos 192.168.2.241:22
-2016-08-06 12:32:46,780:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:32:46,784:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-06 12:32:46,847:paramiko.transport:Unknown exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-06 12:32:46,849:paramiko.transport:Traceback (most recent call last):
-2016-08-06 12:32:46,849:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1774, in run
-2016-08-06 12:32:46,849:paramiko.transport:    self.kex_engine.parse_next(ptype, m)
-2016-08-06 12:32:46,849:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 75, in parse_next
-2016-08-06 12:32:46,849:paramiko.transport:    return self._parse_kexdh_reply(m)
-2016-08-06 12:32:46,849:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 111, in _parse_kexdh_reply
-2016-08-06 12:32:46,849:paramiko.transport:    self.transport._verify_key(host_key, sig)
-2016-08-06 12:32:46,849:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1619, in _verify_key
-2016-08-06 12:32:46,849:paramiko.transport:    key = self._key_info[self.host_key_type](Message(host_key))
-2016-08-06 12:32:46,849:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/rsakey.py", line 58, in __init__
-2016-08-06 12:32:46,849:paramiko.transport:    ).public_key(default_backend())
-2016-08-06 12:32:46,849:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
-2016-08-06 12:32:46,849:paramiko.transport:    _default_backend = MultiBackend(_available_backends())
-2016-08-06 12:32:46,849:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
-2016-08-06 12:32:46,849:paramiko.transport:    "cryptography.backends"
-2016-08-06 12:32:46,849:paramiko.transport:AttributeError: 'EntryPoint' object has no attribute 'resolve'
-2016-08-06 12:32:46,850:paramiko.transport:
-2016-08-06 12:32:46,854:CONFIG:192.168.2.241:Exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-06 12:34:32,295:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:34:32,300:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-06 12:34:32,350:paramiko.transport:Unknown exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-06 12:34:32,351:paramiko.transport:Traceback (most recent call last):
-2016-08-06 12:34:32,351:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1774, in run
-2016-08-06 12:34:32,351:paramiko.transport:    self.kex_engine.parse_next(ptype, m)
-2016-08-06 12:34:32,351:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 75, in parse_next
-2016-08-06 12:34:32,351:paramiko.transport:    return self._parse_kexdh_reply(m)
-2016-08-06 12:34:32,351:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 111, in _parse_kexdh_reply
-2016-08-06 12:34:32,351:paramiko.transport:    self.transport._verify_key(host_key, sig)
-2016-08-06 12:34:32,351:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1619, in _verify_key
-2016-08-06 12:34:32,351:paramiko.transport:    key = self._key_info[self.host_key_type](Message(host_key))
-2016-08-06 12:34:32,351:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/rsakey.py", line 58, in __init__
-2016-08-06 12:34:32,351:paramiko.transport:    ).public_key(default_backend())
-2016-08-06 12:34:32,351:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
-2016-08-06 12:34:32,352:paramiko.transport:    _default_backend = MultiBackend(_available_backends())
-2016-08-06 12:34:32,352:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
-2016-08-06 12:34:32,352:paramiko.transport:    "cryptography.backends"
-2016-08-06 12:34:32,352:paramiko.transport:AttributeError: 'EntryPoint' object has no attribute 'resolve'
-2016-08-06 12:34:32,352:paramiko.transport:
-2016-08-06 12:34:32,365:CONFIG:192.168.2.241:Exception: 'EntryPoint' object has no attribute 'resolve'
-2016-08-06 12:37:22,669:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:37:22,674:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-06 12:37:22,726:paramiko.transport:Unknown exception: 
-2016-08-06 12:37:22,728:paramiko.transport:Traceback (most recent call last):
-2016-08-06 12:37:22,728:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1774, in run
-2016-08-06 12:37:22,728:paramiko.transport:    self.kex_engine.parse_next(ptype, m)
-2016-08-06 12:37:22,728:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 75, in parse_next
-2016-08-06 12:37:22,728:paramiko.transport:    return self._parse_kexdh_reply(m)
-2016-08-06 12:37:22,728:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/kex_group1.py", line 111, in _parse_kexdh_reply
-2016-08-06 12:37:22,728:paramiko.transport:    self.transport._verify_key(host_key, sig)
-2016-08-06 12:37:22,728:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/transport.py", line 1619, in _verify_key
-2016-08-06 12:37:22,729:paramiko.transport:    key = self._key_info[self.host_key_type](Message(host_key))
-2016-08-06 12:37:22,729:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/paramiko/rsakey.py", line 58, in __init__
-2016-08-06 12:37:22,729:paramiko.transport:    ).public_key(default_backend())
-2016-08-06 12:37:22,729:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 36, in default_backend
-2016-08-06 12:37:22,729:paramiko.transport:    _default_backend = MultiBackend(_available_backends())
-2016-08-06 12:37:22,729:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 21, in _available_backends
-2016-08-06 12:37:22,729:paramiko.transport:    ep.resolve()
-2016-08-06 12:37:22,729:paramiko.transport:  File "/usr/local/lib/python2.7/dist-packages/cryptography/hazmat/backends/__init__.py", line 21, in _available_backends
-2016-08-06 12:37:22,729:paramiko.transport:    ep.resolve()
-2016-08-06 12:37:22,729:paramiko.transport:  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
-2016-08-06 12:37:22,729:paramiko.transport:    return self.dispatch_line(frame)
-2016-08-06 12:37:22,729:paramiko.transport:  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
-2016-08-06 12:37:22,730:paramiko.transport:    if self.quitting: raise BdbQuit
-2016-08-06 12:37:22,730:paramiko.transport:BdbQuit
-2016-08-06 12:37:22,730:paramiko.transport:
-2016-08-06 12:37:22,739:CONFIG:192.168.2.241:Exception: 
-2016-08-06 12:47:33,185:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:47:33,190:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-06 12:47:33,377:paramiko.transport:Auth banner: Welcome to VyOS
+2016-08-06 19:14:59,034:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:14:59,036:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:14:59,037:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:14:59,037:CONFIG:dc2-edg-r1:Exception: vyos
+2016-08-06 19:14:59,037:CONFIG:dc2-edg-r1:Exception: vyos
+2016-08-06 19:14:59,037:CONFIG:dc2-edg-r1:Exception: vyos
+2016-08-06 19:14:59,047:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:14:59,049:CONFIG:dc2-edg-r1:Exception: vyos
+2016-08-06 19:16:36,259:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:16:36,258:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:16:36,282:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:16:36,308:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:16:36,312:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
+2016-08-06 19:16:36,322:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
+2016-08-06 19:16:36,340:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
+2016-08-06 19:16:36,366:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
+2016-08-06 19:16:37,014:paramiko.transport:Auth banner: Welcome to VyOS
 
-2016-08-06 12:47:33,377:paramiko.transport:Authentication (password) successful!
-2016-08-06 12:47:33,754:CONFIG:192.168.2.241:loading /home/rollerr/workplace/ansible/vyos/output/192.168.2.241.conf
-2016-08-06 12:47:45,922:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:47:45,929:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-06 12:47:46,087:paramiko.transport:Auth banner: Welcome to VyOS
+2016-08-06 19:16:37,015:paramiko.transport:Authentication (password) successful!
+2016-08-06 19:16:37,019:paramiko.transport:Auth banner: Welcome to VyOS
 
-2016-08-06 12:47:46,087:paramiko.transport:Authentication (password) successful!
-2016-08-06 12:47:46,328:CONFIG:192.168.2.241:Exception: string index out of range
-2016-08-06 12:48:02,020:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:48:02,038:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-06 12:48:02,192:paramiko.transport:Auth banner: Welcome to VyOS
+2016-08-06 19:16:37,019:paramiko.transport:Authentication (password) successful!
+2016-08-06 19:16:37,022:paramiko.transport:Auth banner: Welcome to VyOS
 
-2016-08-06 12:48:02,192:paramiko.transport:Authentication (password) successful!
-2016-08-06 12:48:02,543:CONFIG:192.168.2.241:loading /home/rollerr/workplace/ansible/vyos/output/192.168.2.241.conf
-2016-08-06 12:48:57,667:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 12:48:57,672:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-06 12:48:57,859:paramiko.transport:Auth banner: Welcome to VyOS
+2016-08-06 19:16:37,023:paramiko.transport:Authentication (password) successful!
+2016-08-06 19:16:37,045:paramiko.transport:Auth banner: Welcome to VyOS
 
-2016-08-06 12:48:57,859:paramiko.transport:Authentication (password) successful!
-2016-08-06 12:48:58,206:CONFIG:192.168.2.241:loading /home/rollerr/workplace/ansible/vyos/output/192.168.2.241.conf
-2016-08-06 14:33:45,704:CONFIG:192.168.2.241:connecting to 192.168.2.241
-2016-08-06 14:33:45,713:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
-2016-08-06 14:33:45,879:paramiko.transport:Auth banner: Welcome to VyOS
+2016-08-06 19:16:37,046:paramiko.transport:Authentication (password) successful!
+2016-08-06 19:16:37,304:CONFIG:dc2-edg-r1:Exception: string index out of range
+2016-08-06 19:16:37,313:CONFIG:dc2-edg-r1:Exception: string index out of range
+2016-08-06 19:16:37,323:CONFIG:dc2-edg-r1:Exception: string index out of range
+2016-08-06 19:16:37,333:CONFIG:dc2-edg-r1:Exception: string index out of range
+2016-08-06 19:16:59,510:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:16:59,510:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:16:59,515:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:16:59,544:CONFIG:dc2-edg-r1:connecting to dc2-edg-r1
+2016-08-06 19:16:59,608:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
+2016-08-06 19:16:59,618:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
+2016-08-06 19:16:59,621:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
+2016-08-06 19:16:59,630:paramiko.transport:Connected (version 2.0, client OpenSSH_5.5p1)
+2016-08-06 19:17:00,173:paramiko.transport:Auth banner: Welcome to VyOS
 
-2016-08-06 14:33:45,879:paramiko.transport:Authentication (password) successful!
-2016-08-06 14:33:46,223:CONFIG:192.168.2.241:loading /home/rollerr/workplace/ansible/vyos/output/192.168.2.241.conf
+2016-08-06 19:17:00,173:paramiko.transport:Authentication (password) successful!
+2016-08-06 19:17:00,181:paramiko.transport:Auth banner: Welcome to VyOS
+
+2016-08-06 19:17:00,181:paramiko.transport:Authentication (password) successful!
+2016-08-06 19:17:00,187:paramiko.transport:Auth banner: Welcome to VyOS
+
+2016-08-06 19:17:00,187:paramiko.transport:Authentication (password) successful!
+2016-08-06 19:17:00,191:paramiko.transport:Auth banner: Welcome to VyOS
+
+2016-08-06 19:17:00,192:paramiko.transport:Authentication (password) successful!
+2016-08-06 19:17:00,448:CONFIG:dc2-edg-r1:Exception: string index out of range
+2016-08-06 19:17:00,453:CONFIG:dc2-edg-r1:Exception: string index out of range
+2016-08-06 19:17:00,457:CONFIG:dc2-edg-r1:Exception: string index out of range
+2016-08-06 19:17:00,479:CONFIG:dc2-edg-r1:Exception: string index out of range
