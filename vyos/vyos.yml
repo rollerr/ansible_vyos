@@ -1,0 +1,26 @@
+---
+- hosts: vyos
+  gather_facts: no
+  remote_user: vyos
+
+  vars:
+    name_server: 4.2.2.3
+    hostname: 192.168.2.241
+
+  tasks:
+    - name: Generate config locally
+      template:
+         src=templates/name-server.j2
+         dest=output/{{ hostname }}.conf
+      delegate_to: 127.0.0.1
+
+    - name: Connect to device and send config
+      connection: local
+      netmiko_install_config:
+        host={{hostname}}
+        user=vyos
+        passwd=vyos
+        file=output/{{ hostname }}.conf
+        log_file=local.out
+        device_type=vyos
+        
