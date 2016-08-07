@@ -20,5 +20,5 @@
         user=vyos
         passwd=vyos
         file=output/{{ inventory_hostname }}.conf
-        log_file=local.out
+        log_file=local.log
         
