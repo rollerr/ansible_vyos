@@ -155,7 +155,6 @@ def load(module):
 
     try:
         dispatcher = netmiko.ssh_dispatcher(device_type=args['device_type'])
-        print('hi')
         dev = dispatcher(**dev_params)
     except Exception as err:
         logging.error("Exception: %s", err.message)
