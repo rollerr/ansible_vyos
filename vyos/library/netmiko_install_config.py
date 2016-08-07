@@ -151,7 +151,9 @@ def load(module):
                   "ip": args['host'],
                   "username": args['user'],
                   "password": args['passwd'],
+                  "key_file": args['key_file'],
                   "verbose": False}
+    logging.info(dev_params)
 
     try:
         dispatcher = netmiko.ssh_dispatcher(device_type=args['device_type'])
@@ -191,7 +193,8 @@ def main():
             file=dict(required=True),
             device_type=dict(required=False, default='cisco_ios'),
             log_file=dict(required=False, default=None),
-            diff_file=dict(required=False, default=None)
+            diff_file=dict(required=False, default=None),
+            key_file=dict(required=False, default=None)
         ),
         supports_check_mode=False)
 

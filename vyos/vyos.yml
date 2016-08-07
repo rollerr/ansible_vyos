@@ -17,8 +17,9 @@
       connection: local
       netmiko_install_config:
         host={{ inventory_hostname }} 
-        user=vyos
-        passwd=vyos
+        user=admin
         file=output/{{ inventory_hostname }}.conf
         log_file=local.log
+        device_type=vyos
+        key_file='/home/ubuntu/.ssh/id_rsa'
         
