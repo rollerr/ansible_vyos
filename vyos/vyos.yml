@@ -3,23 +3,20 @@
   gather_facts: no
   remote_user: vyos
 
-  vars:
-    name_server: 4.2.2.3
-
   tasks:
-    - name: Generate config locally
-      template:
-         src=templates/name-server.j2
-         dest=output/{{ inventory_hostname }}.conf
-      delegate_to: 127.0.0.1
+  #- name: Generate config locally
+  #  template:
+  #     src=templates/name-server.j2
+  #     dest=output/{{ inventory_hostname }}.conf
+  #  delegate_to: 127.0.0.1
 
     - name: Connect to device and send config
       connection: local
-      netmiko_install_config:
-        host={{ inventory_hostname }} 
+      netmiko_show_command:
+        host_file='hosts/hosts.local'
         user=admin
-        file=output/{{ inventory_hostname }}.conf
         log_file=local.log
         device_type=vyos
         key_file='/home/ubuntu/.ssh/id_rsa'
-        
+        validation_args={'csv_file' : 'test.csv'}
+        validate_module='parse_checks.vyos.vyos_neighbors.link_checker'
