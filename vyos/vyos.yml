@@ -18,5 +18,5 @@
         log_file=local.log
         device_type=vyos
         key_file='/home/ubuntu/.ssh/id_rsa'
-        validation_args={'csv_file' : 'test.csv'}
+        validation_args={csv_file:test.csv}
         validate_module='parse_checks.vyos.vyos_neighbors.link_checker'
