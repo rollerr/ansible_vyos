@@ -12,7 +12,7 @@
 
     - name: Connect to device and send config
       connection: local
-      netmiko_show_command:
+      netmiko_command:
         host_file='hosts/hosts.local'
         user=admin
         log_file=local.log
