@@ -1,5 +1,5 @@
 ---
-- hosts: dc2
+- hosts: local
   gather_facts: no
   remote_user: vyos
 

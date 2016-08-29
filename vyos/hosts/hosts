@@ -3,4 +3,6 @@ dc2-edg-r1
 dc2-edg-r2
 dc2-cor-r1
 dc2-tor-r1
+[local]
+127.0.0.1
 
