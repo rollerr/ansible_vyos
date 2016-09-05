@@ -14,10 +14,10 @@
       connection: local
       netmiko_command:
         host_file={'filename':'hosts/hosts.local'}
-        user=admin
+        user=vyos
+        password=vyos
         log_file=local.log
         device_type=vyos
-        key_file='/home/ubuntu/.ssh/id_rsa'
         command='show lldp neighbor'
         validation_args={'csv_file':'test.csv'}
         validate_module='parse_checks.vyos.vyos_neighbors.link_checker'
