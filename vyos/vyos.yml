@@ -4,17 +4,12 @@
   remote_user: vyos
 
   tasks:
-  #- name: Generate config locally
-  #  template:
-  #     src=templates/name-server.j2
-  #     dest=output/{{ inventory_hostname }}.conf
-  #  delegate_to: 127.0.0.1
 
     - name: Connect to device and send config
       connection: local
       netmiko_command:
         host_file={'filename':'hosts/hosts.local'}
-        user=vyos
+        user=admin
         password=vyos
         log_file=local.log
         device_type=vyos
