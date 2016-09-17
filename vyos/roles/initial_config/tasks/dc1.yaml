@@ -1,14 +1,16 @@
 ---
 - hosts: dc1
   gather_facts: no
+  roles:
+    - initial_config
+  vars_files:
+    - "vars/{{ inventory_hostname }}.yml"
 
   tasks:
-   - include_vars:
-       file: "../vars/{{ inventory_hostname }}.yml"
    - name: Generate initial config for dc1
      template:
-        src="roles/initial_config/templates/dc1/{{ inventory_hostname }}.j2"
-        dest="roles/initial_config/output/{{ inventory_hostname }}.conf"
+        src="templates/dc1/{{ inventory_hostname }}.j2"
+        dest="output/{{ inventory_hostname }}.conf"
      delegate_to: 127.0.0.1
 
 # - name: Connect to device and send config

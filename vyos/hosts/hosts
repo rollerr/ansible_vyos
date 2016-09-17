@@ -9,7 +9,7 @@ dc2-tor-r1
 #dc1-cor-r1
 #dc1-cor-r2
 dc1-edg-r1
-dc1-edg-r2
+#dc1-edg-r2
 [branch1]
 branch1-edg-r1
 branch1-cor-r1
