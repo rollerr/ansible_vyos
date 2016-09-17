@@ -1,0 +1,19 @@
+---
+- hosts: pe
+  gather_facts: no
+
+  tasks:
+   - name: Generate config locally
+     template:
+        src="templates/pe/{{ inventory_hostname }}.j2"
+        dest="output/{{ inventory_hostname }}.conf"
+     delegate_to: 127.0.0.1
+
+# - name: Connect to device and send config
+#   connection: local
+#   netmiko_install_config:
+#     user=admin
+#     file={{ inventory_hostname }}.conf
+#     log_file=local.log
+#     device_type=vyos
+#     # update key file config i think

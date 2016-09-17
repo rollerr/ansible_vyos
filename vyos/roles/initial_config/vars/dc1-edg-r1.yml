@@ -1,0 +1,9 @@
+interfaces:
+  - name: 'eth5'
+    address: '18.0.0.2/30'
+  - name: 'eth6'
+    address: '18.0.0.6/30'
+  - name: 'eth7'
+    address: '36.0.0.2/30'
+  - name: 'eth8'
+    address: '36.0.0.6/30'
