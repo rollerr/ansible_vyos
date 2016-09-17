@@ -1,3 +1,0 @@
-vyos-r1,eth0,vyos-r2,eth0
-vyos-r1,eth1,vyos-r2,eth0
-vyos-r2,eth9,vyos-l3,eth8
