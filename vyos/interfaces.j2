@@ -1,0 +1,3 @@
+{% for interface_properties in interfaces -%}
+set interfaces ethernet {{ interface_properties.name }} address {{ interface_properties.address }}
+{% endfor %}

@@ -1,0 +1,3 @@
+---
+- include: generate-pe.yml
+  when: "'pe' in inventory_hostname"
