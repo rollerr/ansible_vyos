@@ -3,6 +3,3 @@
     src="templates/pe/{{ inventory_hostname }}.j2"
     dest="output/{{ inventory_hostname }}.conf"
   delegate_to: 127.0.0.1
-  vars_files: "vars/{{ inventory_hostname }}.yml"
-- debug:
-    msg: "{{ item }}"

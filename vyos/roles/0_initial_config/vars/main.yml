@@ -1,1 +1,8 @@
 ---
+devices:
+  super-pe-r1:
+    interfaces:
+      - name: 'eth1'
+        address: '36.0.0.1/30'
+      - name: 'eth2'
+        address: '36.0.0.5/30'
