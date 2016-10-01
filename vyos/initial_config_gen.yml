@@ -1,0 +1,18 @@
+---
+
+- hosts: pe:branch2
+  gather_facts: no
+  roles:
+    - 0_initial_config
+
+#  tasks:
+#  - name: install config 
+#    netmiko_install_config:
+#      host={{ inventory_hostname }}
+#      file="output/{{ inventory_hostname}}.conf"
+#      key_file="/home/ubuntu/.ssh/id_rsa"
+#      user=admin
+#      device_type=vyos
+#      log_file=local.log
+#    delegate_to: 127.0.0.1
+#
