@@ -16,8 +16,8 @@ branch1-cor-r1
 branch1-tor-r1
 [branch2]
 branch2-edg-r1
-branch2-cor-r1
-branch2-tor-r1
+#branch2-cor-r1
+#branch2-tor-r1
 [local]
 127.0.0.1
 [pe]

@@ -1,3 +1,5 @@
 ---
-- include: generate-pe.yml var_file="vars/{{ inventory_hostname }}.yml"
+- include: generate-pe.yml
   when: "'pe' in inventory_hostname"
+- include: generate-branch2.yml
+  when: "'branch2' in inventory_hostname"

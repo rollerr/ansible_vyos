@@ -2,7 +2,53 @@
 devices:
   super-pe-r1:
     interfaces:
+        # [dc1]
       - name: 'eth1'
-        address: '36.0.0.1/30'
+        address: '18.0.0.1/30'
+        description: '--> dc1-edg-r1 | eth5'
       - name: 'eth2'
-        address: '36.0.0.5/30'
+        address: '18.0.0.5/30'
+        description: '--> dc1-edg-r1 | eth6'
+      - name: 'eth3'
+        address: '18.0.0.9/30'
+        description: '--> dc1-edg-r2 | eth5'
+      - name: 'eth4'
+        address: '18.0.0.13/30'
+        description: '--> dc1-edg-r2 | eth6'
+        # [dc2]
+      - name: 'eth5'
+        address: '18.0.0.17/30'
+        description: '--> dc2-edg-r1 | eth5'
+      - name: 'eth6'
+        address: '18.0.0.21/30'
+        description: '--> dc2-edg-r1 | eth6'
+      - name: 'eth7'
+        address: '18.0.0.25/30'
+        description: '--> dc2-edg-r1 | eth5'
+      - name: 'eth8'
+        address: '18.0.0.29/30'
+        description: '--> dc2-edg-r2 | eth6'
+        # [branch1]
+      - name: 'eth9'
+        address: '18.0.0.33/30'
+        description: '--> branch1-edg-r1 | eth5'
+      - name: 'eth10'
+        address: '18.0.0.37/30'
+        description: '--> branch1-edg-r1 | eth6'
+        # [branch2]
+      - name: 'eth11'
+        address: '18.0.0.41/30'
+        description: '--> branch2-edg-r1 | eth5'
+      - name: 'eth12'
+        address: '18.0.0.45/30'
+        description: '--> branch2-edg-r1 | eth6'
+
+  branch2-edg-r1:
+    interfaces:
+      - name: 'eth5'
+        address: '18.0.0.42/30'
+        description: '--> super-pe-r1 | eth11'
+      - name: 'eth6'
+        address: '18.0.0.46/30'
+        description: '--> super-pe-r1 | eth12'
+
