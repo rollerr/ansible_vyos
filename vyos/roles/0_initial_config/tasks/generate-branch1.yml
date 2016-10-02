@@ -1,0 +1,5 @@
+- name: Generate initial config
+  template:
+    src="templates/branch1/{{ inventory_hostname }}.j2"
+    dest="output/{{ inventory_hostname }}.conf"
+  delegate_to: 127.0.0.1

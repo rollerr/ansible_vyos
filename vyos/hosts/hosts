@@ -1,8 +1,8 @@
 [dc2]
 dc2-edg-r1
 dc2-edg-r2
-dc2-cor-r1
-dc2-tor-r1
+#dc2-cor-r1
+#dc2-tor-r1
 [dc1]
 #dc1-tor-r1
 #dc1-tor-r2
@@ -12,8 +12,8 @@ dc1-edg-r1
 #dc1-edg-r2
 [branch1]
 branch1-edg-r1
-branch1-cor-r1
-branch1-tor-r1
+#branch1-cor-r1
+#branch1-tor-r1
 [branch2]
 branch2-edg-r1
 #branch2-cor-r1
@@ -22,4 +22,4 @@ branch2-edg-r1
 127.0.0.1
 [pe]
 super-pe-r1
-# super-pe-r2
+super-pe-r2

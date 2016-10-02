@@ -1,12 +1,12 @@
 ---
 
-- hosts: pe:branch2
+- hosts: all
   gather_facts: no
   roles:
     - 0_initial_config
 
   tasks:
-  - name: install config 
+  - name: install config
     netmiko_install_config:
       host={{ inventory_hostname }}
       file="output/{{ inventory_hostname}}.conf"

@@ -3,3 +3,9 @@
   when: "'pe' in inventory_hostname"
 - include: generate-branch2.yml
   when: "'branch2' in inventory_hostname"
+- include: generate-branch1.yml
+  when: "'branch1' in inventory_hostname"
+- include: generate-dc1.yml
+  when: "'dc1' in inventory_hostname"
+- include: generate-dc2.yml
+  when: "'dc2' in inventory_hostname"
