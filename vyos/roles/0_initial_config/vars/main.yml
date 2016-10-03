@@ -3,161 +3,161 @@ devices:
     branch1-edg-r1:
       interfaces:
       - address: 18.0.1.34/30
-        description: '"super-pe-r1 | eth9"'
+        description: "super-pe-r1 | eth9"
         name: eth5
       - address: 18.0.1.38/30
-        description: '"super-pe-r1 | eth10"'
+        description: "super-pe-r1 | eth10"
         name: eth6
       - address: 36.0.1.34/30
-        description: '"super-pe-r2 | eth9"'
+        description: "super-pe-r2 | eth9"
         name: eth7
       - address: 36.0.1.38/30
-        description: '"super-pe-r2 | eth10"'
+        description: "super-pe-r2 | eth10"
         name: eth8
     branch2-edg-r1:
       interfaces:
       - address: 18.0.1.42/30
-        description: '"super-pe-r1 | eth11"'
+        description: "super-pe-r1 | eth11"
         name: eth5
       - address: 18.0.1.46/30
-        description: '"super-pe-r1 | eth12"'
+        description: "super-pe-r1 | eth12"
         name: eth6
       - address: 36.0.1.42/30
-        description: '"super-pe-r2 | eth11"'
+        description: "super-pe-r2 | eth11"
         name: eth7
       - address: 36.0.1.46/30
-        description: '"super-pe-r2 | eth12"'
+        description: "super-pe-r2 | eth12"
         name: eth8
     dc1-edg-r1:
       interfaces:
       - address: 18.0.1.2/30
-        description: '"super-pe-r1 | eth1"'
+        description: "super-pe-r1 | eth1"
         name: eth5
       - address: 18.0.1.6/30
-        description: '"super-pe-r1 | eth2"'
+        description: "super-pe-r1 | eth2"
         name: eth6
       - address: 36.0.1.2/30
-        description: '"super-pe-r2 | eth1"'
+        description: "super-pe-r2 | eth1"
         name: eth7
       - address: 36.0.1.6/30
-        description: '"super-pe-r2 | eth2"'
+        description: "super-pe-r2 | eth2"
         name: eth8
     dc1-edg-r2:
       interfaces:
       - address: 18.0.1.10/30
-        description: '"super-pe-r1 | eth3"'
+        description: "super-pe-r1 | eth3"
         name: eth5
       - address: 18.0.1.14/30
-        description: '"super-pe-r1 | eth4"'
+        description: "super-pe-r1 | eth4"
         name: eth6
       - address: 36.0.1.10/30
-        description: '"super-pe-r2 | eth3"'
+        description: "super-pe-r2 | eth3"
         name: eth7
       - address: 36.0.1.14/30
-        description: '"super-pe-r2 | eth4"'
+        description: "super-pe-r2 | eth4"
         name: eth8
     dc2-edg-r1:
       interfaces:
       - address: 18.0.2.2/30
-        description: '"super-pe-r1 | eth5"'
+        description: "super-pe-r1 | eth5"
         name: eth5
       - address: 18.0.2.6/30
-        description: '"super-pe-r1 | eth6"'
+        description: "super-pe-r1 | eth6"
         name: eth6
       - address: 36.0.2.2/30
-        description: '"super-pe-r2 | eth5"'
+        description: "super-pe-r2 | eth5"
         name: eth7
       - address: 36.0.2.6/30
-        description: '"super-pe-r2 | eth6"'
+        description: "super-pe-r2 | eth6"
         name: eth8
     dc2-edg-r2:
       interfaces:
       - address: 18.0.2.26/30
-        description: '"super-pe-r1 | eth7"'
+        description: "super-pe-r1 | eth7"
         name: eth5
       - address: 18.0.2.30/30
-        description: '"super-pe-r1 | eth8"'
+        description: "super-pe-r1 | eth8"
         name: eth6
       - address: 36.0.2.10/30
-        description: '"super-pe-r2 | eth7"'
+        description: "super-pe-r2 | eth7"
         name: eth7
       - address: 36.0.2.14/30
-        description: '"super-pe-r2 | eth8"'
+        description: "super-pe-r2 | eth8"
         name: eth8
     super-pe-r1:
       interfaces:
       - address: 18.0.2.1/30
-        description: '"dc2-edg-r1 | 18.0.2.2/30"'
+        description: "dc2-edg-r1 | 18.0.2.2/30"
         name: eth5
       - address: 18.0.2.5/30
-        description: '"dc2-edg-r1 | 18.0.2.6/30"'
+        description: "dc2-edg-r1 | 18.0.2.6/30"
         name: eth6
       - address: 18.0.2.25/30
-        description: '"dc2-edg-r2 | 18.0.2.26/30"'
+        description: "dc2-edg-r2 | 18.0.2.26/30"
         name: eth7
       - address: 18.0.2.29/30
-        description: '"dc2-edg-r2 | 18.0.2.30/30"'
+        description: "dc2-edg-r2 | 18.0.2.30/30"
         name: eth8
       - address: 18.0.1.1/30
-        description: '"dc1-edg-r1 | 18.0.1.2/30"'
+        description: "dc1-edg-r1 | 18.0.1.2/30"
         name: eth1
       - address: 18.0.1.5/30
-        description: '"dc1-edg-r1 | 18.0.1.6/30"'
+        description: "dc1-edg-r1 | 18.0.1.6/30"
         name: eth2
       - address: 18.0.1.9/30
-        description: '"dc1-edg-r2 | 18.0.1.10/30"'
+        description: "dc1-edg-r2 | 18.0.1.10/30"
         name: eth3
       - address: 18.0.1.13/30
-        description: '"dc1-edg-r2 | 18.0.1.14/30"'
+        description: "dc1-edg-r2 | 18.0.1.14/30"
         name: eth4
       - address: 18.0.1.33/30
-        description: '"branch1-edg-r1 | 18.0.1.34/30"'
+        description: "branch1-edg-r1 | 18.0.1.34/30"
         name: eth9
       - address: 18.0.1.37/30
-        description: '"branch1-edg-r1 | 18.0.1.38/30"'
+        description: "branch1-edg-r1 | 18.0.1.38/30"
         name: eth10
       - address: 18.0.1.41/30
-        description: '"branch2-edg-r1 | 18.0.1.42/30"'
+        description: "branch2-edg-r1 | 18.0.1.42/30"
         name: eth11
       - address: 18.0.1.45/30
-        description: '"branch2-edg-r1 | 18.0.1.46/30"'
+        description: "branch2-edg-r1 | 18.0.1.46/30"
         name: eth12
     super-pe-r2:
       interfaces:
       - address: 36.0.2.1/30
-        description: '"dc2-edg-r1 | 36.0.2.2/30"'
+        description: "dc2-edg-r1 | 36.0.2.2/30"
         name: eth5
       - address: 36.0.2.5/30
-        description: '"dc2-edg-r1 | 36.0.2.6/30"'
+        description: "dc2-edg-r1 | 36.0.2.6/30"
         name: eth6
       - address: 36.0.2.9/30
-        description: '"dc2-edg-r2 | 36.0.2.10/30"'
+        description: "dc2-edg-r2 | 36.0.2.10/30"
         name: eth7
       - address: 36.0.2.13/30
-        description: '"dc2-edg-r2 | 36.0.2.14/30"'
+        description: "dc2-edg-r2 | 36.0.2.14/30"
         name: eth8
       - address: 36.0.1.1/30
-        description: '"dc1-edg-r1 | 36.0.1.2/30"'
+        description: "dc1-edg-r1 | 36.0.1.2/30"
         name: eth1
       - address: 36.0.1.5/30
-        description: '"dc1-edg-r1 | 36.0.1.6/30"'
+        description: "dc1-edg-r1 | 36.0.1.6/30"
         name: eth2
       - address: 36.0.1.11/30
-        description: '"dc1-edg-r2 | 36.0.1.10/30"'
+        description: "dc1-edg-r2 | 36.0.1.10/30"
         name: eth3
       - address: 36.0.1.15/30
-        description: '"dc1-edg-r2 | 36.0.1.14/30"'
+        description: "dc1-edg-r2 | 36.0.1.14/30"
         name: eth4
       - address: 36.0.1.33/30
-        description: '"branch1-edg-r1 | 36.0.1.34/30"'
+        description: "branch1-edg-r1 | 36.0.1.34/30"
         name: eth9
       - address: 36.0.1.37/30
-        description: '"branch1-edg-r1 | 36.0.1.38/30"'
+        description: "branch1-edg-r1 | 36.0.1.38/30"
         name: eth10
       - address: 36.0.1.41/30
-        description: '"branch2-edg-r1 | 36.0.1.42/30"'
+        description: "branch2-edg-r1 | 36.0.1.42/30"
         name: eth11
       - address: 36.0.1.45/30
-        description: '"branch2-edg-r1 | 36.0.1.46/30"'
+        description: "branch2-edg-r1 | 36.0.1.46/30"
         name: eth12
 
