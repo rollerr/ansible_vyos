@@ -84,7 +84,7 @@ devices:
       - address: 36.0.2.14/30
         description: '"super-pe-r2 | eth8"'
         name: eth8
-    external-as-1:
+    external-pe-r1:
       interfaces:
       - address: 108.0.0.1/30
         description: '"super-pe-r1 | 108.0.0.2/30"'
@@ -134,7 +134,7 @@ devices:
         description: '"super-pe-r2 | eth13"'
         name: eth13
       - address: 108.0.0.2/30
-        description: '"external-as-1 | eth1"'
+        description: '"external-pe-r1 | eth1"'
         name: eth14
     super-pe-r2:
       interfaces:
@@ -178,6 +178,6 @@ devices:
         description: '"super-pe-r1 | 72.0.0.1/30"'
         name: eth13
       - address: 144.0.0.2/30
-        description: '"external-as-1 | eth2"'
+        description: '"external-pe-r1 | eth2"'
         name: eth14
 
