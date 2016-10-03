@@ -1,6 +1,6 @@
 {% for interface_properties in devices[inventory_hostname]['interfaces'] %}
 set interfaces ethernet {{ interface_properties.name }} address {{ interface_properties.address }}
 {% if interface_properties.description is defined -%}
-set interfaces ethernet {{ interface_properties.name }} description "{{ interface_properties.description }}"
+set interfaces ethernet {{ interface_properties.name }} description {{ interface_properties.description }}
 {% endif %}
 {% endfor %}
