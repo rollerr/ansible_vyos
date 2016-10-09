@@ -181,3 +181,19 @@ devices:
         description: '"external-pe-r1 | eth2"'
         name: eth14
 
+      protocols:
+        bgp:
+          # local-as must be defined
+            local-autonomous-system: 200
+            neighbors:
+              external-pe-r1:
+                remote-ip: 144.0.0.1
+                remote-autonomous-system: 300
+                description: external-pe-r1
+              super-pe-r1:
+                remote-ip: 72.0.0.1
+                remote-autonomous-system: 100
+                description: super-pe-r1
+
+
+
