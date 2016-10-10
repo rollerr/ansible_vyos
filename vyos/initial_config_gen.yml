@@ -1,6 +1,6 @@
 ---
 
-- hosts: pe:branch2
+- hosts: pe
   gather_facts: no
   roles:
     - 0_initial_config

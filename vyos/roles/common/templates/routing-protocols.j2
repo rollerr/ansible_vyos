@@ -1,20 +1,10 @@
-{% for protocol_properties in devices[inventory_hostname]['protocols'] -%}
-{% if protocol_properties['bgp'] is defined -%}
-{% for bgp_properties in protocol_properties['bgp'] -%}
-
-edit protocols bgp {{ bgp_properties.local-autonomous-system }}
-
-{% for bgp_properties in protocol_properties['bgp'] -%}
-{% if bgp_properties.local-autonomous-system is defined -%}
-
-edit protocols {{ bgp_properties.local-autonomous-system }}
+{% for protocol, protocol_properties in devices[inventory_hostname]['protocols'].items() -%}
+{% if protocol | lower == 'bgp' -%}
+edit protocols bgp {{ protocol_properties['local-autonomous-system'] }}
+{% for neighbor_name, neighbor_attributes in protocol_properties['neighbors'].items() -%}
+set neighbor {{ neighbor_attributes['remote-ip'] }} remote-as {{ neighbor_attributes['remote-autonomous-system'] }}
+set neighbor {{ neighbor_attributes['remote-ip'] }} descriptions {{ neighbor_attributes['description'] }}
+{% endfor %}
 {% endif %}
-
-{% for neighbor_name, neighbor_attributes in bgp_properties['neighbors'].items() -%}
-
-set neighbor {{ neighbor_attributes.remote-ip }} remote-as {{ neighbor_attributes.remote-autonomous-system }}
-set neighbor {{ neighbor_attributes.remote-ip }} descriptions {{ neighbor_attributes.description }}
-
-{% endfor -%}
-{% endof -%}
-{% endif -%}
+{% endfor %}
+top
