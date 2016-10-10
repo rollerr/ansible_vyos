@@ -84,6 +84,7 @@ devices:
       - address: 36.0.2.14/30
         description: '"super-pe-r2 | eth8"'
         name: eth8
+
     external-pe-r1:
       interfaces:
       - address: 108.0.0.1/30
@@ -92,6 +93,20 @@ devices:
       - address: 144.0.0.1/30
         description: '"super-pe-r2 | 144.0.0.2/30"'
         name: eth2
+      protocols:
+        bgp:
+          # local-as must be defined
+            local-autonomous-system: 300
+            neighbors:
+              super-pe-r1:
+                remote-ip: 108.0.0.2
+                remote-autonomous-system: 100
+                description: super-pe-r1
+              super-pe-r2:
+                remote-ip: 144.0.0.2
+                remote-autonomous-system: 200
+                description: super-pe-r2
+
     super-pe-r1:
       interfaces:
       - address: 18.0.2.1/30
@@ -136,6 +151,20 @@ devices:
       - address: 108.0.0.2/30
         description: '"external-pe-r1 | eth1"'
         name: eth14
+      protocols:
+        bgp:
+          # local-as must be defined
+            local-autonomous-system: 100
+            neighbors:
+              external-pe-r1:
+                remote-ip: 108.0.0.1
+                remote-autonomous-system: 300
+                description: external-pe-r1
+              super-pe-r2:
+                remote-ip: 72.0.0.2
+                remote-autonomous-system: 200
+                description: super-pe-r2
+
     super-pe-r2:
       interfaces:
       - address: 36.0.2.1/30
@@ -180,7 +209,6 @@ devices:
       - address: 144.0.0.2/30
         description: '"external-pe-r1 | eth2"'
         name: eth14
-
       protocols:
         bgp:
           # local-as must be defined
@@ -194,6 +222,3 @@ devices:
                 remote-ip: 72.0.0.1
                 remote-autonomous-system: 100
                 description: super-pe-r1
-
-
-
